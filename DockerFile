@@ -1,0 +1,6 @@
+FROM python:3.8-slim-buster
+MAINTAINER tyza66
+WORKDIR /app
+COPY . .
+RUN pip3 install flask
+CMD ["python3","app.py"]
