@@ -3,4 +3,6 @@ MAINTAINER tyza66
 WORKDIR /app
 COPY . .
 RUN pip3 install flask
+RUN pip3 install gevent
+RUN pip3 install flask_cors
 CMD ["python3","app.py"]
